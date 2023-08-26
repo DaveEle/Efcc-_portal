@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/form.css">
+
+    <!--This code is for form validation of EFFC staff, Abuja head quater-->
+
+</head>
+
+<div class="blue">
+    <span>
+    <input class="input_blue" type="text" name="Search" id="Search" value="Search">
+    <button class="subm" type="submit">Search</button>
+</span>
+   </div>
+   
+
+    <header>
+        <nav>
+            <img class="efcc-img" src="images/efcc2.jpg" width="100px" height="100px" alt="EFCC LOGO">
+           <span> <img class="efcc-img" src="images/efcc.jpg" width="100px" height="100px" alt="efcc logo"></span>
+        </nav>
+    </header>
+    <section>
+        <h1>STAFF BIOMETRIC DATA</h1> 
+        <form action="" method="get">
+        <div class="general">
+      
+            <label class="label" for="fname">First Name:</label>
+          
+           <input class="first" type="text" name="First name" placeholder="First name" required>
+         <div> <label class="label"  for="Mname">Middle Name:</label>
+        
+            <input class="first" type="text" placeholder="Midlle name" required></div>
+            <label class="label" for="Lname">Last Name:</label>
+      
+           <input class="first" type="text"name placeholder="Last name" required>
+           <div><label class="label" for="Mail">Email:</label>
+          
+            <input class="first" type="email" placeholder="email" required>
+        </div> 
+        <div>
+            <label class="label" for="password">Password:</label>
+            
+            <input class="first" type="password" placeholder="password" required>
+        </div>
+          <div>
+            <label class="label" for="Phone">Phone Nunber:</label>
+            <input class="first" type="tel" name="Phone Nunber" id="Phone Nunber">
+          </div>
+          <br>
+            <div class="gender">
+             <label class="label_radio" for="Sex">Male</label>
+              <input type="radio"name="gender_choice" value="choice-1" placeholder="gendername" required>
+             <label class="label_radio" for="Sex">Female</label>
+            <input type="radio" name="gender_choice" value="choice" placeholder="gendername" required>
+            </div>
+            <br>
+             <div>
+              <label class="birth" for="">Birthdate:</label>
+              <input class="first" type="date" name="birthdate" id="birthdate" required> 
+              </div>
+
+               <br>
+     
+                <section>
+
+                    <select class="year">
+                        <option>Years of experience</option>
+                        <option>  less than 1 Years</option>
+                        <option> 1 Years</option>
+                        <option> 2 Years</option>
+                        <option> 3 Years</option>
+                        <option> 4 Years</option>
+                        <option> 5 Years</option>
+                        <option> 6 Years</option>
+                    </select>
+                   
+                </section>
+                <section>
+                    <h3>
+                        work Experience
+                    </h3>
+                    <textarea name="work Experience" id="" cols="20" rows="5"> Enter your Work experience here</textarea>
+                </section>
+            
+                <section>
+                
+                 <select class="selet">
+                    <option value="Age Range" >Age Range</option>
+                    <option value="Age from 18 to 25yrs" >Age from 18 to 25yrs</option>
+                    <option value="Age from 25 to 30yrs" >Age from 25 to 30yrs</option>
+                    <option value="Age from 30 to 35yrs" >Age from 30 to 35yrs</option>
+                    <option value="Age from 35 to 40yrs" >Age from 35 to 40yrs</option>
+                    <option value="Age from 40 to 60yrs">Age from 40 to 60yrs</option>
+                </select>
+                
+            </section>
+            <br>
+             <div class="grade">
+               <strong>Best Staff of the Year</strong> 
+               <div>
+                    <label for="Best Staff">Grade 1</label>
+                    <input type="radio" name="best Staff" id="Best Staff">
+
+                </div>
+           
+                <div>
+                    <label for="Best Staff">Grade 2</label>
+                    <input type="radio" name="best Staff" id="Best Staff">
+
+                </div>
+                <div>
+                    <label for="Best Staff">Grade 3</label>
+                    <input type="radio" name="best Staff" id="Best Staff">
+
+                </div>
+                <div>
+                    <label for="Best Staff">Grade 4 </label>
+                    <input type="radio" name="best Staff" id="Best Staff">
+
+                </div>
+                <div>
+                    <label for="Best Staff">Grade 5</label>
+                    <input type="radio" name="best Staff" id="Best Staff">
+                </div>
+            </div>
+            <br>
+              <!-- <div>
+                Staff Level
+                <input type="number" name="Staff level " id="Staff levl" min="9" max="20">
+                <Div> -->
+                <div class="certificate">
+                    
+                <div>
+                    <label class="certi" for="birth">BIRTH CERT:</label>
+                    <input class="fili" type="file" name="Birth" id="Birth" required>
+                </div>
+                <div>
+                    <label class="certi"  for="ID">National ID:</label>
+                    <input class="fili" type="file" name="National ID" id="National ID"  required>
+                </div>
+                <div>
+                    <label class="certi" for="Results">WAEC/NECO:</label>
+                    <input class="fili" type="file" name="WAEC/NECO:" id="WAEC/NECO:"required>
+                </div>
+                <div>
+                    <label class="certi" for="Cert">Tertiary Cert</label>
+                    <input class="fili" type="file" name="Tertiary Cert" id="Tertiary Cert" required>
+                </div>
+            </div> 
+        
+            <!-- The code below is explain how you can chooose a color*
+                <div>*
+                    Choose your Best color.
+                    <label for="color">color</label>
+                    <input type="color" name="color" id="color">
+                </div>-->
+                   <!--EMMET is a helper-->
+                <!--
+                    With emmet you can just fastrack your coding speed.
+                    for instance; (header>nav>ul>li*3>a.p{check link})+main+footer,
+                    imagine this code( form:post>(.group>label+input:text)+(.group>label+input:number)+(.group>label+input:checkbox)+(.group>label+input:radio))
+                    code handle the bug form and time consuming coding.
+                -->
+                <br>
+            <footer>
+                <div>
+                    <button class="login" type="submit"><submitt>LOGIN</submitt></button>
+                    <button class="reset" type="reset">RESET</button>
+                </Div>
+            </footer>
+            </div>
+           </form>
+           
+          
+
+           
+
+        
+       
+</body>
+</html>
